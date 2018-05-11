@@ -26,12 +26,12 @@ For details on the evaluation scheme please refer to the [technical report](http
 Performance curves
 (Protocol: Open-Set. Metrics: TPIR20@FPIR (r = 20).)
 
-<img style="width: 270px;" src="./images/all_fr_curves.png" alt="arxiv2018">
+<img style="width: 100px;" src="./images/all_fr_curves.png" alt="arxiv2018">
 
 #### Verification
 Metric: Mean Accuracy.
 
-<img style="width: 300px;" src="./images/verification_result.png" alt="arxiv2018">
+<img style="width: 200px;" src="./images/verification_result.png" alt="arxiv2018">
 
 ### Citation
 @article{cheng2018surveillance,
