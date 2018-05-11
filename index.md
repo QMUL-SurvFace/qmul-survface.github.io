@@ -1,6 +1,6 @@
 # Surveillance Face Recognition Challenge
-### [Computer Vision Group, Queen Mary University of London](http://vision.eecs.qmul.ac.uk/)
-### [Zhiyi Cheng](http://www.eecs.qmul.ac.uk/~zc302/)  [Xiatian Zhu](http://www.eecs.qmul.ac.uk/~xiatian/)   [Shaogang Gong](http://www.eecs.qmul.ac.uk/~sgg/)
+##### [Computer Vision Group, Queen Mary University of London](http://vision.eecs.qmul.ac.uk/)
+##### [Zhiyi Cheng](http://www.eecs.qmul.ac.uk/~zc302/)  [Xiatian Zhu](http://www.eecs.qmul.ac.uk/~xiatian/)   [Shaogang Gong](http://www.eecs.qmul.ac.uk/~sgg/)
 
 <img style="width: 800px;" src="./images/web-vs-surv.png" alt="arxiv2018">
 
