@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# Surveillance Face Recognition Challenge
+##### [Computer Vision Group, Queen Mary University of London](http://vision.eecs.qmul.ac.uk/)
+##### [Zhiyi Cheng](http://www.eecs.qmul.ac.uk/~zc302/)  [Xiatian Zhu](http://www.eecs.qmul.ac.uk/~xiatian/)   [Shaogang Gong](http://www.eecs.qmul.ac.uk/~sgg/)
 
-You can use the [editor on GitHub](https://github.com/QMUL-SurvFace/qmul-survface.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<img style="width: 700px;" src="./images/web-vs-surv.png" alt="arxiv2018">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### News
+Dataset, test protocol and test code: **Coming Soon**
+ 
+### Description
+To facilitate more studies on developing FR models that are effective and robust for low-resolution surveillance facial images, we introduce a new Surveillance Face Recognition Challenge, which we call the QMUL-SurvFace benchmark. This new benchmark is the largest and more importantly the only true surveillance FR benchmark to our best knowledge, where low-resolution images are not synthesised by artificial down-sampling of native high-resolution images. This challenge contains 463,507 face images of 15,573 distinct identities captured in real-world uncooperative surveillance scenes over wide space and time. 
+Face recognition is generally more difficult in an
+open-set setting which is typical for surveillance scenarios,
+owing to a large number of non-target people
+(distractors) appearing open spaced scenes.
 
-# Header 1
-## Header 2
-### Header 3
+### Download
+QMUL-SurvFace Training Images **Coming Soon**
 
-- Bulleted
-- List
+### Benchmark
+For details on the evaluation scheme please refer to the [technical report](https://arxiv.org/pdf/1804.09691.pdf). 
+#### Identification
+Performance curves
+(Protocol: Open-Set. Metrics: TPIR20@FPIR (r = 20).)
 
-1. Numbered
-2. List
+<img style="width: 270px;" src="./images/all_fr_curves.png" alt="arxiv2018">
 
-**Bold** and _Italic_ and `Code` text
+#### Verification
+Metric: Mean Accuracy.
 
-[Link](url) and ![Image](src)
-```
+<img style="width: 300px;" src="./images/verification_result.png" alt="arxiv2018">
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Citation
+@article{cheng2018surveillance,
+  title={Surveillance Face Recognition Challenge},
+  author={Cheng, Zhiyi and Zhu, Xiatian and Gong, Shaogang},
+  journal={arXiv preprint arXiv:1804.09691},
+  year={2018}
+}
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/QMUL-SurvFace/qmul-survface.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Contact
+For questions, please contact Zhiyi Cheng at z.cheng@qmul.ac.uk
