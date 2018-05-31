@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)https://qmul-survface.github.io/QMUL-SurvFace/index.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>QMUL-SurvFace</title>
+
+<!-- Fonts and stuff -->
+<link href="./QMUL-SurvFace_files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./QMUL-SurvFace_files/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./QMUL-SurvFace_files/iconize.css">
+<script type="text/javascript" async="" src="./QMUL-SurvFace_files/ga.js"></script><script async="" src="./QMUL-SurvFace_files/prettify.js"></script><!-- End Jekyll SEO tag -->
+
+    <script type="text/javascript">
+        
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22940424-1']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        
+    </script>
+    
+  </head>
+
+<body><div id="pratikabuSTTDiv" class="pratikabusttdiv-no-print" style="bottom: 20px; right: 20px; opacity: 1; display: block;"><img id="pratikabuSTTArrowUp" style="float: right; opacity: 0.5; cursor: pointer; width: 48px; height: 48px; transform: rotate(180deg);" class="pratikabuSTTImg" src="chrome-extension://hegiignepmecppikdlbohnnbfjdoaghj/icons/pratikabu-stt-48-1.png"><div id="pratikabuSTTDiv2" class="pratikabusttdiv-no-print" style="width: 48px; margin-left: 0px;"><img id="pratikabuSTTClear" class="pratikabuSTTImg" src="chrome-extension://hegiignepmecppikdlbohnnbfjdoaghj/icons/pratikabu-stt-clear-24.png" style="opacity: 0.5; cursor: pointer;"><img id="pratikabuSTTPageUp" class="pratikabuSTTImg" src="chrome-extension://hegiignepmecppikdlbohnnbfjdoaghj/icons/pratikabu-stt-pageup-24.png" style="opacity: 0.5; cursor: pointer;"><img id="pratikabuSTTSettings" class="pratikabuSTTImg" src="chrome-extension://hegiignepmecppikdlbohnnbfjdoaghj/icons/pratikabu-stt-settings-24.png" style="opacity: 0.5; cursor: pointer; transform: rotate(0deg);"><img id="pratikabuSTTPageDown" class="pratikabuSTTImg" src="chrome-extension://hegiignepmecppikdlbohnnbfjdoaghj/icons/pratikabu-stt-pageup-24.png" style="opacity: 0.5; cursor: pointer; transform: rotate(180deg);"></div></div>
+  <div id="content">
+    <div id="content-inner">
+
+    <div class="section head">
+	<h1 id="surveillance-face-recognition-challenge">Surveillance Face Recognition Challenge</h1>
+	
+    <div class="affiliations">
+    <p><a href="http://vision.eecs.qmul.ac.uk/">Computer Vision Group, Queen Mary University of London</a>
+    
+
+    <p><a href="http://www.eecs.qmul.ac.uk/~zc302/">Zhiyi Cheng</a>  
+    ,
+    <a href="http://www.eecs.qmul.ac.uk/~xiatian/">Xiatian Zhu</a>  
+    ,
+    <a href="http://www.eecs.qmul.ac.uk/~sgg/">Shaogang Gong</a>
+    </div>
+    <ul id="tabs">
+    	<li><a href="https://qmul-survface.github.io/QMUL-SurvFace.htm" name="#tab1">Home</a></li>
+    	<li><a href="https://qmul-survface.github.io/QMUL-SurvFace_results.htm" name="#tab2">Results</a></li>  
+	</ul> 
+    </div>
+
+    <center><img style="width: 860px;" src="./images/many_probe_imgs.png" alt="arxiv2018"><center>
+    </div>
+
+
+<ul>
+<h2 id="Evaluation Protocol">Evaluation Protocol</h2>
+<p>
+<h3 id="identification">Identification</h3>
+<p>We apply the open-set protocol for identification. Metric: TPIR@FNIR</p>
+<p>Two error types are considerd: False Positive Identification
+Rate (FPIR) & False Negative Identification Rate (FNIR) </p>
+<p><img style="width: 130px;" src="./images/fpir.png"></p>
+which measures the proportion of nonmate searches <img style="width: 25px;" src="./images/Nnmm.png" </p>
+(i.e. no mate faces in the gallery) that produce
+one or more enrolled candidates at or above a threshold
+t (i.e. false alarm), among a total of <img style="width: 25px;" src="./images/Nnm.png" </p> nonmate
+searches attempted.
+<p><img style="width: 130px;" src="./images/fnir.png"></p>
+which is the proportion of mate searches <img style="width: 25px;" src="./images/Nmnm.png" </p> 
+(i.e. with mate faces present in the gallery) with enrolled mate
+found outside top r ranks or matching similarity score
+below the threshold t, among <img style="width: 25px;" src="./images/Nm.png" </p> 
+mate searches.
+By default, we set r = 20 (i.e. FNIR(t, 20)) which assumes
+a small workload by a human reviewer employed to
+review the candidates returned from an identification
+search. </p>
+In practice, a more intuitive measure may be the
+“hit rate” or True Positive Identification Rate (TPIR):
+<p><img style="width: 200px;" src="./images/tpir.png"></p>
+
+
+<h3 id="verification">Verification</h3>
+
+
+</ul>
+<p></p>
+
+<ul>
+<h2 id="Benchmark">Benchmark</h2>
+
+
+
+<h2 id="contact">Contact</h2>
+<p>For questions, please contact Zhiyi Cheng at z.cheng@qmul.ac.uk</p>
+
+
+    
+<br>
+<br>
+
+
+</div></body></html>
