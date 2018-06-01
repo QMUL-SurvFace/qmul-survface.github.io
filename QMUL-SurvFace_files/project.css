@@ -73,7 +73,7 @@ th,td
   padding: 0 40px;
   height: 0; 
   line-height: 30px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   color: #fff;
   border-right: 30px solid transparent;
@@ -85,7 +85,7 @@ th,td
 
 #tabs a:hover,
 #tabs a:focus {
-  border-bottom-color: #2ac7e1;
+  border-bottom-color: #e1572a; /* #2ac7e1; */
   opacity: 1;
   filter: alpha(opacity=100);
 }
