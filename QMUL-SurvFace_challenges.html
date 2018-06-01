@@ -53,28 +53,52 @@
 
 
 <ul>
-<h2 id="Benchmark">Benchmark</h2>
-<p>For details on the evaluation scheme please see our <a href="https://arxiv.org/pdf/1804.09691.pdf">paper</a>. </p>
-<li><strong>DeepID2</strong> - Sun Y et al. <a href="http://papers.nips.cc/paper/5416-deep-learning-face-representation-by-joint-identification-verification.pdf">Deep learning face representation by joint identification-verification NIPS 2014. </a> </li>
-
-<li><strong>CentreFace</strong> - Wen Y et al. <a href="https://pdfs.semanticscholar.org/1c3d/3058f685fb02e40fb62382690715fc597a7f.pdf">A discriminative feature learning approach for deep face recognition ECCV 2016 </a> </li>
-
-<li><strong>FaceNet</strong> - Schroff F et al. <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf">Facenet: A unified embedding for face recognition and clustering CVPR 2015. </a> </li>
-
-<li><strong>VggFace</strong> - Parkhi O M et al. <a href="http://cis.csuohio.edu/~sschung/CIS660/DeepFaceRecognition_parkhi15.pdf">Deep Face Recognition BMVC 2015. </a> </li>
-
-<li><strong>SphereFace</strong> - Liu W et al. <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf">Sphereface: Deep hypersphere embedding for face recognition CVPR 2017. </a> </li>
+	
+<h3 id="Benchmark">Data Partition</h3>
 <p>
+To benchmark the evaluation protocol,
+we firstly need to split the entire QMUL-SurvFace
+data into the training and test sets. Specifically, we divide
+the 10,638 persons each with 2 or more face images into
+two halves: one half (5,319) as the training data, the
+other half (5,319) plus the remaining 4,935 single-shot
+identities (in total 10,254) as the test data
+</p>
 
+	<table align="center" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Split</th>
+							<th>All</th>
+							<th>Training</th>
+							<th>Testing</th>
+						</tr>
+					</thead>
 
-<h3 id="identification">Identification</h3>
+					<tbody>
+						<tr>
+							<td><strong>IDs</strong></td>
+							<td>15,573</td>
+							<td>5,319</td>
+							<td>10,254</td>
+						</tr>
+						<tr>
+							<td><strong>Images</strong></td>
+							<td>463,507</td>
+							<td>220,890</td>
+							<td>242,617</td>
+						</tr>
+						
+					</tbody>	
+				</table>
+
+<h2 id="identification">(I) Face Identification</h2>
 <p>We apply the open-set protocol for identification. Metric: TPIR20@FNIR</p>
 
-<h4 id="performance curve">Performance curves</h4>
-<p><img style="width: 300px;" src="./images/all_fr_curves.png" alt="arxiv2018"></p>
+	
+	
 
-
-<h3 id="verification">Verification</h3>
+<h2 id="verification">(II) Face Verification</h2>
 
 
 </ul>
