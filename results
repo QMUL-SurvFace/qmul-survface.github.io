@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)https://qmul-survface.github.io/QMUL-SurvFace/index.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>QMUL-SurvFace</title>
+      <meta name="description" content="To facilitate more studies on developing face recognition models that are effective and robust 
+         for low-resolution surveillance facial images, we introduce a new Surveillance Face Recognition Challenge, 
+         which we call the QMUL-SurvFace benchmark. 
+         This new benchmark is the largest and more importantly the only true surveillance face recognition benchmark 
+         to our best knowledge, where low-resolution images are not synthesised by artificial down-sampling 
+         of native high-resolution images. This challenge contains 463,507 face images of 15,573 distinct identities 
+         captured in real-world uncooperative surveillance scenes over wide space and time. 
+         Face recognition is generally more difficult in an open-set setting which is typical for surveillance scenarios, 
+         owing to a large number of non-target people (distractors) appearing open spaced scenes.">
+      <meta name="keywords" content="face recognition; surveillance face; surveillance face recognition; open-set recognition; closed-set recognition; low-resolution; super-resolution; benchmarks; computer vision;">
+      <!-- Fonts and stuff -->
+      <link href="./QMUL-SurvFace_files/css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="./QMUL-SurvFace_files/project.css" media="screen">
+      <link rel="stylesheet" type="text/css" media="screen" href="./QMUL-SurvFace_files/iconize.css">
+      <link rel="shortcut icon" href="./images/icon_fav.png">
+      <script type="text/javascript" async="" src="./QMUL-SurvFace_files/ga.js"></script><script async="" src="./QMUL-SurvFace_files/prettify.js"></script><!-- End Jekyll SEO tag -->
+   </head>
+   <body>
+      <div id="content">
+         <div id="content-inner">
+            <div class="section head">
+               <p>
+               <h1 id="surveillance-face-recognition-challenge">Surveillance Face Recognition Challenge</h1>
+               </p>
+               <div class="affiliations">
+                  <p><a href="http://www.eecs.qmul.ac.uk/~zc302/">Zhiyi Cheng</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                     <a href="http://www.eecs.qmul.ac.uk/~xiatian/">Xiatian Zhu</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                     <a href="http://www.eecs.qmul.ac.uk/~sgg/">Shaogang Gong</a>
+                  <p><a href="http://vision.eecs.qmul.ac.uk/">Computer Vision Group,  </a >
+                     <a href="http://www.eecs.qmul.ac.uk/">School of Electronic Engineering and Computer Science,  </a >
+                     <a href="http://www.qmul.ac.uk/">Queen Mary University of London</a >
+               </div>
+               <ul id="tabs">
+                  <li><a href="https://qmul-survface.github.io/index.html" name="#tab1">Home</a></li>
+                  <li><a href="https://qmul-survface.github.io/challenges.html" name="#tab2">Challenges</a></li>
+                  <li><a href="https://qmul-survface.github.io/results.html" name="#tab3">Results</a></li>
+               </ul>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>
