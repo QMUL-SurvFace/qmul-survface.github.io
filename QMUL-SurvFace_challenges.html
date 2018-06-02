@@ -91,12 +91,33 @@
             half face images go into
             the gallery set, i.e. the watch list. (2) All the remaining
             images and the single-shot imagery are used to
-            form the probe set. As such, the majority of probe people
-            are unknown (not enrolled gallery identities), which
-            more accurately reflects the open space forensic search
-            nature in practice.
+            form the probe set.
+            In the open-set evaluation setting,
+            two error types are commonly used.
+            The first type is <em>false alarm</em> quantified by the False Positive Identification
+            Rate (FPIR):
+            
+            which measures the proportion of nonmate searches XXX (i.e. no mate faces in the gallery) that produce
+            one or more enrolled candidates at or above a threshold
+            XXX (i.e. false alarm), among a total of Nnm nonmate searches attempted.
+         
+            
+            The second type of error is <em>miss</em> quantified
+            by the False Negative Identification Rate (FNIR):
+         
+            which is the proportion of mate searches XXX (i.e. with mate faces present in the gallery) with enrolled mate
+            found outside top r ranks or matching similarity score below the threshold t, among XXX mate searches.
+             In practice, a more intuitive measure may be the "hit rate" or True Positive Identification Rate (TPIR):
+         
+            In the QMUL-SurvFace challenge, 
+            the TPIR@FPIR measure is threfore adopted as the open-set face identification performance metrics. 
+            By varying the threashold, TPIR@FPIR can be used to generate an ROC curve.
+         
          
             <h3 id="verification">(II) Face Verification</h3>
+         
+         
+         
          </div>
       </div>
    </body>
