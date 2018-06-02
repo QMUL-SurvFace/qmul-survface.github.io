@@ -100,10 +100,10 @@
                Rate (FPIR):
             </p>
             <p><img style="width: 130px;" src="./images/fpir.png"></p>
-            <p>which measures the proportion of nonmate searches <img style="width: 25px;" src="./images/Nnmm.png"/>
+            <p>which measures the proportion of nonmate searches <img style="width: 30px;" src="./images/Nnmm.png"/>
                (i.e. no mate faces in the gallery) that produce
                one or more gallery matching candidates at or above a threshold
-               t (i.e. false alarm), among a total of <img style="width: 25px;" src="./images/Nnm.png"/> nonmate
+               t (i.e. false alarm), among a total of <img style="width: 30px;" src="./images/Nnm.png"/> nonmate
                searches attempted.
             </p>
             <p>The second type of error is <em>missing</em>
@@ -112,22 +112,23 @@
                This is quantified
                by the False Negative Identification Rate (FNIR):
             </p>
-            <p><img style="width: 130px;" src="./images/fnir.png"></p>
+            <p><img style="width: 150px;" src="./images/fnir.png"></p>
             <p>which is the proportion of mate searches <img style="width: 25px;" src="./images/Nmnm.png"/> 
                (i.e. with mate faces present in the gallery) with enrolled gallery mate(s)
                found outside top r ranks or matching similarity score
-               below the threshold t, among <img style="width: 25px;" src="./images/Nm.png"/> 
+               below the threshold t, among <img style="width: 20px;" src="./images/Nm.png"/> 
                mate searches.
             </p>
             <p>
-            A more intuitive measure may be the
-            <em>hit rate</em> or True Positive Identification Rate (TPIR):
+               A more intuitive measure may be the
+               <em>hit rate</em> or True Positive Identification Rate (TPIR):
             </p>
             <p><img style="width: 200px;" src="./images/tpir.png"></p>
             <p>The TPIR@FPIR measurements are adopted as the open-set face identification performance metrics. 
             </p>
             <p>By varying the threashold t, TPIR@FPIR can be used to generate an ROC curve and the Area Under the Curve (AUC)
-               can be then computed to measure an overall model performance.</p>
+               can be then computed to measure an overall model performance.
+            </p>
             <br>
             <h3 id="verification">(II) Face Verification</h3>
             <p>This challenge verifies whether a pair of face images describe the same ID or not.
@@ -154,7 +155,7 @@
                fraction of matched pairs with matching score s below a threshold t:
             </p>
             <p><img style="width: 250px;" src="./images/frr.png"/></p>
-            <p>where <img style="width: 17px;" src="./images/m.png"/> is the set of matched pairs.</p> 
+            <p>where <img style="width: 17px;" src="./images/m.png"/> is the set of matched pairs.</p>
             <p>   
                In the same spirit of TPIR,
                the True Accept Rate (TAR) can be further defined:
