@@ -67,6 +67,13 @@ th,td
   margin: 0 -15px 0 0;
 }
 
+/*#tabs a {
+  height: 0; 
+  line-height: 30px;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #3D3D3D;  
+}*/
+
 #tabs a {
   float: left;
   position: relative;
@@ -101,12 +108,7 @@ th,td
   filter: alpha(opacity=100);   
 }
 
-#tabs a {
-  height: 0; 
-  line-height: 30px;
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid #2f4bd8; /* #3D3D3D;  */  
-}
+
 
 
 
