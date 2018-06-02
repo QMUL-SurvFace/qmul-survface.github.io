@@ -99,6 +99,11 @@ th,td
 
 #tabs a:focus {
   outline: 0;
+  color: #2b1913;
+}
+
+#tabs a:active {
+  font-weight: bold;
 }
 
 #tabs #current {
