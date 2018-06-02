@@ -81,7 +81,7 @@
             </table>
          
             <h3 id="identification">(I) Face Identification</h3>
-            In this challenge, an <strong>open-set</strong> face recognition protocol is adopted.
+            <p>In this challenge, an <strong>open-set</strong> face recognition protocol is adopted.
             This is because in realistic surveillance applications, most faces captured by CCTV cameras 
             are not of any target persons and therefore should be detected as unknown.
             Specifically, a watch
@@ -95,23 +95,30 @@
             In the open-set evaluation setting,
             two error types are commonly used.
             The first type is <em>false alarm</em> quantified by the False Positive Identification
-            Rate (FPIR):
-            
-            which measures the proportion of nonmate searches XXX (i.e. no mate faces in the gallery) that produce
+            Rate (FPIR):</p>
+            <p><img style="width: 130px;" src="./images/fpir.png"></p>
+            <p>which measures the proportion of nonmate searches <img style="width: 25px;" src="./images/Nnmm.png"/>
+            (i.e. no mate faces in the gallery) that produce
             one or more enrolled candidates at or above a threshold
-            XXX (i.e. false alarm), among a total of Nnm nonmate searches attempted.
-         
+            t (i.e. false alarm), among a total of <img style="width: 25px;" src="./images/Nnm.png"/> nonmate
+            searches attempted.</p>
             
-            The second type of error is <em>miss</em> quantified
-            by the False Negative Identification Rate (FNIR):
+            <p>The second type of error is <em>missing</em> quantified
+            by the False Negative Identification Rate (FNIR):</p>
+            <p><img style="width: 130px;" src="./images/fnir.png"></p>
+            <p>which is the proportion of mate searches <img style="width: 25px;" src="./images/Nmnm.png"/> 
+   (i.e. with mate faces present in the gallery) with enrolled mate
+found outside top r ranks or matching similarity score
+below the threshold t, among <img style="width: 25px;" src="./images/Nm.png"/> 
+mate searches.</p>
+            A more intuitive measure may be the
+“hit rate” or True Positive Identification Rate (TPIR):
+<p><img style="width: 200px;" src="./images/tpir.png"></p>
+           
          
-            which is the proportion of mate searches XXX (i.e. with mate faces present in the gallery) with enrolled mate
-            found outside top r ranks or matching similarity score below the threshold t, among XXX mate searches.
-             In practice, a more intuitive measure may be the "hit rate" or True Positive Identification Rate (TPIR):
-         
-            In the QMUL-SurvFace challenge, 
+            <p>In this challenge, 
             the TPIR@FPIR measure is threfore adopted as the open-set face identification performance metrics. 
-            By varying the threashold, TPIR@FPIR can be used to generate an ROC curve.
+            By varying the threashold, TPIR@FPIR can be used to generate an ROC curve.</p>
          
          
             <h3 id="verification">(II) Face Verification</h3>
