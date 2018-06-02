@@ -87,7 +87,7 @@
                multi-shot test IDs were randomly selected. For each selected ID,
                half face images go into
                the gallery set, i.e. the watch list. (2) All the remaining
-               test images of the 5,319 multi-shot IDs and all images of the 10,254 single-shot IDs were then used to
+               images of 5,319 multi-shot IDs and all images of all the single-shot IDs were then used to
                form the probe set.
                In the open-set evaluation setting,
                two error types are utilised.
@@ -97,7 +97,7 @@
             <p><img style="width: 130px;" src="./images/fpir.png"></p>
             <p>which measures the proportion of nonmate searches <img style="width: 25px;" src="./images/Nnmm.png"/>
                (i.e. no mate faces in the gallery) that produce
-               one or more enrolled candidates at or above a threshold
+               one or more gallery matching candidates at or above a threshold
                t (i.e. false alarm), among a total of <img style="width: 25px;" src="./images/Nnm.png"/> nonmate
                searches attempted.
             </p>
@@ -106,7 +106,7 @@
             </p>
             <p><img style="width: 130px;" src="./images/fnir.png"></p>
             <p>which is the proportion of mate searches <img style="width: 25px;" src="./images/Nmnm.png"/> 
-               (i.e. with mate faces present in the gallery) with enrolled mate
+               (i.e. with mate faces present in the gallery) with enrolled gallery mate(s)
                found outside top r ranks or matching similarity score
                below the threshold t, among <img style="width: 25px;" src="./images/Nm.png"/> 
                mate searches.
@@ -114,19 +114,22 @@
             A more intuitive measure may be the
             <em>hit rate</em> or True Positive Identification Rate (TPIR):
             <p><img style="width: 200px;" src="./images/tpir.png"></p>
-            <p>Therefore, 
-               the TPIR@FPIR measure is finally adopted as the open-set face identification performance metrics. 
+            <p>The TPIR@FPIR measure is adopted as the open-set face identification performance metrics. 
             </p>
-            <p>By varying the threashold, TPIR@FPIR can be used to generate an ROC curve.</p>
+            <p>By varying the threashold t, TPIR@FPIR can be used to generate an ROC curve and the Area Under the Curve (AUC)
+               can be then computed to measure an overall model performance.</p>
             <br>
             <h3 id="verification">(II) Face Verification</h3>
-            <p>This challenge verifies if a pair of face images describe the same identity or not.
-               Similar to other existing benchmarks (Huang et al, 2007, Klare et al, 2015), the sets of <em>matched</em> 
-               and <em>unmatched</em> pairs are defined for performance evaluation.
-               Specifically, for each of 5,319 test identities, a matched pair and an unmatched pair
-               are randomly generated. For performance measurement on these pairs of testing algorithms, two types of error can occur
+            <p>This challenge verifies whether a pair of face images describe the same ID or not.
+               Similar to other existing benchmarks like LFW, the sets of <em>matched</em> 
+               and <em>unmatched</em> pairs were defined for algorithm performance evaluation.
+               Specifically, for each of 5,319 test IDs, a matched pair and an unmatched pair
+               were randomly generated. To measure the performance of testing algorithms on these 
+               matched and unmatched pairs, 
+               two types of error are considered.
                This first one is <em>false accept</em> – a distractor claims an identity
-               of interest, which is quatified by the False Accept Rate (FAR) to measure the fraction of unmatched pairs with the corresponding score s above threshold t:
+               of interest.
+               This is quatified by the False Accept Rate (FAR) which measures the fraction of unmatched pairs with the corresponding score s above a threshold t:
             </p>
             <p><img style="width: 250px;" src="./images/far.png"/></p>
             <p>
@@ -134,17 +137,17 @@
             </p>
             <p> 
                This second one is <em>false reject</em> – the system mistakenly
-               declines the identity of interest, which is quantified by 
-               the False Rejection Rate (FRR) to measure the
+               declines the identity of interest. This is quantified by 
+               the False Rejection Rate (FRR) which measures the
                fraction of matched pairs with matching score s below a threshold t:
             </p>
             <p><img style="width: 250px;" src="./images/frr.png"/></p>
-            <p>where <img style="width: 17px;" src="./images/m.png"/> is the set of matched pairs. Similar to TPIR,
-               the True Accept Rate (TAR) is further defined to facilitate understanding as:
+            <p>where <img style="width: 17px;" src="./images/m.png"/> is the set of matched pairs. In the same spirit of TPIR,
+               the True Accept Rate (TAR) can be further defined:
             </p>
             <p><img style="width: 160px;" src="./images/tar.png"/></p>
             <p>
-               The TAR@FAR measurements are adopted for face verification evaluation.
+               The TAR@FAR measurements are utilised for face verification evaluation.
             </p>
          </div>
       </div>
