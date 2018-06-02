@@ -79,8 +79,23 @@
                   </tr>
                </tbody>
             </table>
+         
             <h3 id="identification">(I) Face Identification</h3>
-            In this challenge, 
+            In this challenge, an <strong>open-set</strong> face recognition protocol is adopted.
+            This is because in realistic surveillance applications, most faces captured by CCTV cameras 
+            are not of any target persons and therefore should be detected as unknown.
+            Specifically, a watch
+            list identification scenario is created by building
+            the probe and gallery sets as below: (1) Out of the 5,319
+            multi-shot test identities, 3,000 are randomly selected for each of which
+            half face images go into
+            the gallery set, i.e. the watch list. (2) All the remaining
+            images and the single-shot imagery are used to
+            form the probe set. As such, the majority of probe people
+            are unknown (not enrolled gallery identities), which
+            more accurately reflects the open space forensic search
+            nature in practice.
+         
             <h3 id="verification">(II) Face Verification</h3>
          </div>
       </div>
