@@ -79,52 +79,48 @@
                   </tr>
                </tbody>
             </table>
-         
             <h3 id="identification">(I) Face Identification</h3>
             <p>In this challenge, an <strong>open-set</strong> face recognition protocol is adopted.
-            This is because in realistic surveillance applications, most faces captured by CCTV cameras 
-            are not of any target persons and therefore should be detected as unknown.
-            Specifically, a watch
-            list identification scenario is created by building
-            the probe and gallery sets as below: (1) Out of the 5,319
-            multi-shot test identities, 3,000 are randomly selected for each of which
-            half face images go into
-            the gallery set, i.e. the watch list. (2) All the remaining
-            images and the single-shot imagery are used to
-            form the probe set.
-            In the open-set evaluation setting,
-            two error types are commonly used.
-            The first type is <em>false alarm</em> quantified by the False Positive Identification
-            Rate (FPIR):</p>
+               This is because in realistic surveillance applications, most faces captured by CCTV cameras 
+               are not of any target persons and therefore should be detected as unknown.
+               Specifically, a watch
+               list identification scenario is created by building
+               the probe and gallery sets as below: (1) Out of the 5,319
+               multi-shot test identities, 3,000 are randomly selected for each of which
+               half face images go into
+               the gallery set, i.e. the watch list. (2) All the remaining
+               images and the single-shot imagery are used to
+               form the probe set.
+               In the open-set evaluation setting,
+               two error types are commonly used.
+               The first type is <em>false alarm</em> quantified by the False Positive Identification
+               Rate (FPIR):
+            </p>
             <p><img style="width: 130px;" src="./images/fpir.png"></p>
             <p>which measures the proportion of nonmate searches <img style="width: 25px;" src="./images/Nnmm.png"/>
-            (i.e. no mate faces in the gallery) that produce
-            one or more enrolled candidates at or above a threshold
-            t (i.e. false alarm), among a total of <img style="width: 25px;" src="./images/Nnm.png"/> nonmate
-            searches attempted.</p>
-            
+               (i.e. no mate faces in the gallery) that produce
+               one or more enrolled candidates at or above a threshold
+               t (i.e. false alarm), among a total of <img style="width: 25px;" src="./images/Nnm.png"/> nonmate
+               searches attempted.
+            </p>
             <p>The second type of error is <em>missing</em> quantified
-            by the False Negative Identification Rate (FNIR):</p>
+               by the False Negative Identification Rate (FNIR):
+            </p>
             <p><img style="width: 130px;" src="./images/fnir.png"></p>
             <p>which is the proportion of mate searches <img style="width: 25px;" src="./images/Nmnm.png"/> 
-   (i.e. with mate faces present in the gallery) with enrolled mate
-found outside top r ranks or matching similarity score
-below the threshold t, among <img style="width: 25px;" src="./images/Nm.png"/> 
-mate searches.</p>
+               (i.e. with mate faces present in the gallery) with enrolled mate
+               found outside top r ranks or matching similarity score
+               below the threshold t, among <img style="width: 25px;" src="./images/Nm.png"/> 
+               mate searches.
+            </p>
             A more intuitive measure may be the
-<em>hit rate</em> or True Positive Identification Rate (TPIR):
-<p><img style="width: 200px;" src="./images/tpir.png"></p>
-           
-         
+            <em>hit rate</em> or True Positive Identification Rate (TPIR):
+            <p><img style="width: 200px;" src="./images/tpir.png"></p>
             <p>Therefore, 
-            the TPIR@FPIR measure is finally adopted as the open-set face identification performance metrics. 
-            By varying the threashold, TPIR@FPIR can be used to generate an ROC curve.</p>
-         
-         
+               the TPIR@FPIR measure is finally adopted as the open-set face identification performance metrics. 
+            </p>
+            <p>By varying the threashold, TPIR@FPIR can be used to generate an ROC curve.</p>
             <h3 id="verification">(II) Face Verification</h3>
-         
-         
-         
          </div>
       </div>
    </body>
