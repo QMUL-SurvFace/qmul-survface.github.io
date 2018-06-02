@@ -42,13 +42,12 @@
             </div>
             <h3 id="Benchmark">Data Partition</h3>
             <p>
-               To benchmark the evaluation protocol,
-               we firstly need to split the entire QMUL-SurvFace
-               data into the training and test sets. Specifically, we divide
-               the 10,638 persons each with 2 or more face images into
+               The same data partition is used for both (I) Face Identification and (II) Face Verification
+               challenges. Specifically,
+               the 10,638 persons with 2 or more face images are divided randomly into
                two halves: one half (5,319) as the training data, the
-               other half (5,319) plus the remaining 4,935 single-shot
-               identities (in total 10,254) as the test data. 
+               other half (5,319). The remaining 4,935 single-shot
+               identities (totally 10,254) are used for model test. 
                These statistics
                are summarsied in the Table below.
                The same data partition is applied to both
@@ -78,8 +77,12 @@
                   </tr>
                </tbody>
             </table>
-            <h2 id="identification">(I) Face Identification</h2>
-            <h2 id="verification">(II) Face Verification</h2>
+            <h3 id="identification">(I) Face Identification</h3>
+            
+            
+            <h3 id="verification">(II) Face Verification</h3>
+            
+            
             </ul>
             <p></p>
             <br>
