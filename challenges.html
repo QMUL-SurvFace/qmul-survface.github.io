@@ -45,14 +45,12 @@
             <p>
                The same data partition is used for both (I) Face Identification and (II) Face Verification
                challenges. Specifically,
-               the 10,638 persons with 2 or more face images are divided randomly into
+               the 10,638 identities (IDs) with 2 or more face images are divided randomly into
                two halves: one half (5,319) as the training data, the
-               other half (5,319). The remaining 4,935 single-shot
-               identities (totally 10,254) are used for model test. 
+               other half (5,319) as the test data. The remaining 4,935 single-shot
+               IDs (totally 10,254) are used for model test. 
                These statistics
                are summarsied in the Table below.
-               The same data partition is applied to both
-               face identification and face verification challenges.
             </p>
             <table align="center" width="70%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
                <thead align="center">
@@ -80,19 +78,19 @@
             </table>
             <br>
             <h3 id="identification">(I) Face Identification</h3>
-            <p>In this challenge, an <strong>open-set</strong> face recognition protocol is adopted.
-               This is because in realistic surveillance applications, most faces captured by CCTV cameras 
-               are not of any target persons and therefore should be detected as unknown.
+            <p>In this challenge, an <strong>open-set</strong> face recognition protocol is adopted based on the consideration that
+               in realistic surveillance applications, most faces captured by CCTV cameras 
+               are not of target persons and therefore should be detected as non-interest.
                Specifically, a watch
                list identification scenario is created by building
-               the probe and gallery sets as below: (1) Out of the 5,319
-               multi-shot test identities, 3,000 are randomly selected for each of which
+               the probe and gallery sets as below: (1) 3,000 out of the 5,319
+               multi-shot test IDs were randomly selected. For each selected ID,
                half face images go into
                the gallery set, i.e. the watch list. (2) All the remaining
-               images and the single-shot imagery are used to
+               test images of the 5,319 multi-shot IDs and all images of the 10,254 single-shot IDs were then used to
                form the probe set.
                In the open-set evaluation setting,
-               two error types are commonly used.
+               two error types are utilised.
                The first type is <em>false alarm</em> quantified by the False Positive Identification
                Rate (FPIR):
             </p>
