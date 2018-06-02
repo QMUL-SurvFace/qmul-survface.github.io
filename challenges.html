@@ -91,7 +91,9 @@
                form the probe set.
                In the open-set evaluation setting,
                two error types are utilised.
-               The first type is <em>false alarm</em> quantified by the False Positive Identification
+               The first type is <em>false alarm</em> – the system mistakenly
+               recognises an non-target person as some target people in the gallery.
+               This is quantified by the False Positive Identification
                Rate (FPIR):
             </p>
             <p><img style="width: 130px;" src="./images/fpir.png"></p>
@@ -101,7 +103,10 @@
                t (i.e. false alarm), among a total of <img style="width: 25px;" src="./images/Nnm.png"/> nonmate
                searches attempted.
             </p>
-            <p>The second type of error is <em>missing</em> quantified
+            <p>The second type of error is <em>missing</em>
+               – the system mistakenly
+               declines the ID of interest.
+               This is quantified
                by the False Negative Identification Rate (FNIR):
             </p>
             <p><img style="width: 130px;" src="./images/fnir.png"></p>
@@ -127,7 +132,7 @@
                were randomly generated. To measure the performance of testing algorithms on these 
                matched and unmatched pairs, 
                two types of error are considered.
-               This first one is <em>false accept</em> – a distractor claims an identity
+               The first one is <em>false accept</em> – a distractor claims an identity
                of interest.
                This is quatified by the False Accept Rate (FAR) which measures the fraction of unmatched pairs with the corresponding score s above a threshold t:
             </p>
@@ -136,8 +141,8 @@
                where <img style="width: 15px;" src="./images/u.png"/> denotes the set of unmatched pairs. 
             </p>
             <p> 
-               This second one is <em>false reject</em> – the system mistakenly
-               declines the identity of interest. This is quantified by 
+               The second one is <em>false reject</em> – the system mistakenly
+               declines the person of interest. This is quantified by 
                the False Rejection Rate (FRR) which measures the
                fraction of matched pairs with matching score s below a threshold t:
             </p>
