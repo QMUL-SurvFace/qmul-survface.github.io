@@ -125,20 +125,22 @@
                Similar to other existing benchmarks (Huang et al, 2007, Klare et al, 2015), the sets of <em>matched</em> 
                and <em>unmatched</em> pairs are defined for performance evaluation.
                Specifically, for each of 5,319 test identities, a matched pair and an unmatched pair
-               are randomly generated. For performance measurement on these pairs of testing algorithms, two types of error can occur:
-               (1) A false accept – a distractor claims an identity
-               of interest, which can be quatified by the fraction of unmatched pairs with the corresponding score s above threshold t,
-               i.e. False Accept Rate (FAR):
+               are randomly generated. For performance measurement on these pairs of testing algorithms, two types of error can occur
+               This first one is <em>false accept</em> – a distractor claims an identity
+               of interest, which is quatified by the False Accept Rate (FAR) to measure the fraction of unmatched pairs with the corresponding score s above threshold t:
             </p>
             <p><img style="width: 250px;" src="./images/far.png"/></p>
             <p>
-               where <img style="width: 15px;" src="./images/u.png"/> denotes the set of unmatched pairs. In contrast,
-               the False Rejection Rate (FRR) represents the
+               where <img style="width: 15px;" src="./images/u.png"/> denotes the set of unmatched pairs. </p>
+                <p> 
+                   This second one is <em>false reject</em> – the system mistakenly
+declines the identity of interest, which is quantified by 
+               the False Rejection Rate (FRR) to measure the
                fraction of matched pairs with matching score s below a threshold t:
             </p>
             <p><img style="width: 250px;" src="./images/frr.png"/></p>
             <p>where <img style="width: 17px;" src="./images/m.png"/> is the set of matched pairs. Similar to TPIR,
-               the True Accept Rate (TAR), the complement of FRR, is further defined as:
+               the True Accept Rate (TAR) is further defined to facilitate understanding as:
             </p>
             <p><img style="width: 160px;" src="./images/tar.png"/></p>
             <p>
