@@ -78,6 +78,7 @@
                </tbody>
             </table>
             <br>
+            <!-- ////////////////////////////////////////////////////////////// -->
             <h3 id="identification">(I) Face Identification</h3>
             <p>In this challenge, an <strong>open-set</strong> face recognition protocol is adopted based on the consideration that
                in realistic surveillance applications, most faces captured by CCTV cameras 
@@ -130,6 +131,7 @@
                can be then computed to measure an overall model performance.
             </p>
             <br>
+            <!-- ////////////////////////////////////////////////////////////// -->
             <h3 id="verification">(II) Face Verification</h3>
             <p>This challenge verifies whether a pair of face images describe the same ID or not.
                Similar to other existing benchmarks like LFW, the sets of <em>matched</em> 
@@ -140,8 +142,7 @@
                two types of error are considered.
             </p>
             <p>
-               The first one is <em>false accept</em> – a distractor claims an identity
-               of interest.
+               The first one is <em>false accept</em> – the system claims a distractor as a target gallery ID.
                This is quatified by the False Accept Rate (FAR) which measures the fraction of unmatched pairs with the corresponding score s above a threshold t:
             </p>
             <p><img style="width: 250px;" src="./images/far.png"/></p>
