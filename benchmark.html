@@ -32,6 +32,7 @@
       <link rel="stylesheet" type="text/css" media="screen" href="./QMUL-SurvFace_files/iconize.css">
       <link rel="shortcut icon" href="./images/new_icon.png">
       <script type="text/javascript" async="" src="./QMUL-SurvFace_files/ga.js"></script><script async="" src="./QMUL-SurvFace_files/prettify.js"></script><!-- End Jekyll SEO tag -->
+             
   
    </head>
    <body>
@@ -55,269 +56,234 @@
                   <li><a href="https://qmul-survface.github.io/benchmark.html" name="#tab3" id="current">Benchmark</a></li>
                </ul>
             </div>
-           
-   
 
 
- 
-<ul class="nav nav-tabs"> 
-      <li class="active"><a href="https://qmul-survface.github.io/benchmark.html#1" data-toggle="tab">
-		  <h3><strong>Identification</strong></h3>
-      </a></li>
-      <li><a href="https://qmul-survface.github.io/benchmark.html#2" data-toggle="tab">
-		  <h3><strong>Verification</strong></h3>
-      </a></li>
-      <li><a href="https://qmul-survface.github.io/benchmark.html#3" data-toggle="tab">
-		  <h3><strong>Method Details</strong></h3>
-      </a></li>
-</ul>
+<!-- Tab links -->         
+<div class="tab">
+	<ul>
+        <li class="active"><a href="#Identification"><h3><strong>Identification</strong></h3></a></li>
+        <li><a href="#Verification"><h3><strong>Verification</strong></h3></a></li>
+        <li><a href="#Method"><h3><strong>Method Details</strong></h3></a></li>
+    </ul>
+</div> 
+  
+    
+    <div class="tabInner">
+            <div id="Identification">
+                <h3>Identification</h3>
+  				<table align="center" width="100%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
+  				<thead>
+    			<tr>
+      				<th>Algorithm</th>
+      				<th>Year</th>
+      				<th>TPIR@FPIR=0.3</th>
+      				<th>TPIR@FPIR=0.2</th>
+     				<th>TPIR@FPIR=0.1</th>
+      				<th>AUC</th>
+    			</tr>
+  				</thead> 				
+    			<tr>
+    				<td><strong>CentreFace<strong></td>
+    				<td>2016</td>
+    				<td>0.245</td>
+    				<td>0.196</td>
+    				<td>0.132</td>
+    				<td>0.337</td>                
+    			</tr>
+  				<tr>
+    				<td><strong>SphereFace<strong></td>
+    				<td>2017</td>
+    				<td>0.158</td>
+    				<td>0.118</td>
+    				<td>0.068</td>
+    				<td>0.215</td>                
+  				</tr>
+  				<tr>
+   				 	<td><strong>FaceNet<strong></td>
+    				<td>2015</td>
+    				<td>0.120</td>
+    				<td>0.075</td>
+    				<td>0.039</td>
+    				<td>0.186</td>                
+  				</tr>
+  				<tr>
+    				<td><strong>DeepID2<strong></td>
+    				<td>2014</td>   
+    				<td>0.120</td>
+    				<td>0.075</td>
+    				<td>0.028</td>
+    				<td>0.187</td>                
+  				</tr>
+  				<tr>
+   	 				<td><strong>VggFace<strong></td>
+    				<td>2015</td>    
+    				<td>0.065</td>
+    				<td>0.048</td>
+    				<td>0.025</td>
+    				<td>0.096</td>                
+  				</tr>
+  				</tbody>
+  				</table>
+				<h3> Indentification Curves </h3>
+  				<center><img style="width: 38%;" src="./images/all_fr_curves.png" alt="QMUL SurvFace"></center> 
+  				<br>
+  				<br>
+            </div>
+            
+            <div id="Verification">
+                <h3>Verification</h3>
+  				<table align="center" width="100%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
+  				<thead>
+    			<tr>
+      				<th>Algorithm</th>
+      				<th>Year</th>
+      				<th>TAR@FAR=0.3</th>
+      				<th>TAR@FAR=0.1</th>
+      				<th>TAR@FAR=0.01</th>
+      				<th>TAR@FAR=0.001</th>
+      				<th>AUC</th>
+    			</tr>
+  				</thead>
+  				<tbody align="center">
+    			<tr>
+    				<td><strong>CentreFace<strong></td>
+    				<td>2016</td>      
+    				<td>0.954</td>
+    				<td>0.858</td>
+    				<td>0.624</td>
+    				<td>0.407</td>
+    				<td>0.949</td>                
+    			</tr>
+  				<tr>
+    				<td><strong>FaceNet<strong></td>
+    				<td>2015</td>     
+    				<td>0.945</td>
+    				<td>0.808</td>
+    				<td>0.482</td>
+    				<td>0.208</td>  
+    				<td>0.937</td>                
+  				</tr>
+ 			 	<tr>
+    				<td><strong>DeepID2<strong></td>
+   					<td>2014</td>        
+    				<td>0.804</td>
+    				<td>0.634</td>
+    				<td>0.366</td>
+    				<td>0.229</td> 
+    				<td>0.846</td>                
+  				</tr>
+  				<tr>
+    				<td><strong>SphereFace<strong></td>
+    				<td>2017</td>     
+    				<td>0.789</td>
+    				<td>0.648</td>
+    				<td>0.390</td>
+    				<td>0.225</td>
+    				<td>0.835</td>                
+  				</tr> 
+  				<tr>
+    				<td><strong>VggFace<strong></td>
+    				<td>2015</td>         
+    				<td>0.647</td>
+    				<td>0.424</td>
+    				<td>0.150</td>
+    				<td>0.044</td> 
+    				<td>0.742</td>                
+  				</tr>
+  				</tbody>
+  				</table>
+  
+				<br>
+				<br>
 
-<div class="tab-content">
-      <div class="tab-pane fade in active" id="1">
-	    <br>
-	    <br>
-	    <br>
+				<table align="center" width="50%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
+  				<thead>
+    			<tr>
+      				<th>Algorithm</th>
+      				<th>Year</th>
+      				<th>Mean Accuracy</th>
+    			</tr>
+  				</thead>
+  				<tbody align="center">
+    			<tr>
+    				<td><strong>CentreFace<strong></td>
+    				<td>2016</td>      
+    				<td>87.90</td>               
+    			</tr>
+  				<tr>
+   	 				<td><strong>FaceNet<strong></td>
+    				<td>2015</td>     
+    				<td>85.67</td>                
+  				</tr>
+  	 			<tr>
+    				<td><strong>SphereFace<strong></td>
+    				<td>2017</td>     
+    				<td>77.46</td>                
+  				</tr> 
+  				<tr>
+    				<td><strong>DeepID2<strong></td>
+    				<td>2014</td>        
+    				<td>76.90</td>              
+  				</tr>
+ 				<tr>
+    				<td><strong>VggFace<strong></td>
+    				<td>2015</td>         
+    				<td>67.59</td>               
+  				</tr>
+  				</tbody>
+  				</table>
+  
+  				<br>
+  				<br>
+            </div>
+            
+            
+            <div id="Method">
+                <h3>Method Details</h3>
+  				<table align="center" width="100%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
+  				<thead>
+    			<tr>
+      				<th>Method</th>
+      				<th>Details</th>
+    			</tr>
+  				</thead>
+  				<tbody align="center">
+    			<tr>
+    				<td><strong>CentreFace<strong></td>
+    				<td>Wen Y et al. <a href="https://pdfs.semanticscholar.org/1c3d/3058f685fb02e40fb62382690715fc597a7f.pdf">A discriminative feature learning approach for deep face recognition ECCV 2016 </td>                
+    			</tr>
+  				<tr>
+    				<td><strong>SphereFace<strong></td>
+    				<td>Liu W et al. <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf">Sphereface: Deep hypersphere embedding for face recognition CVPR 2017.</td>                
+  				</tr>
+  				<tr>
+    				<td><strong>FaceNet<strong></td>
+    				<td>Schroff F et al. <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf">Facenet: A unified embedding for face recognition and clustering CVPR 2015.</td>
+  				</tr>
+  				<tr>
+    				<td><strong>DeepID2<strong></td>
+    				<td>Sun Y et al. <a href="http://papers.nips.cc/paper/5416-deep-learning-face-representation-by-joint-identification-verification.pdf">Deep learning face representation by joint identification-verification NIPS 2014.</td>                  
+  				</tr>
+  				<tr>
+    				<td><strong>VggFace<strong></td>
+    				<td>Parkhi O M et al. <a href="http://cis.csuohio.edu/~sschung/CIS660/DeepFaceRecognition_parkhi15.pdf">Deep Face Recognition BMVC 2015.</td>                   
+  				</tr>
+  				</tbody>
+  				</table>
+  
+  				<br>
+  				<br>
+  				<br>
+            </div>
+        
+        </div>
 
-<table align="center" width="100%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Algorithm</th>
-      <th>Year</th>
-      <th>TPIR@FPIR=0.3</th>
-      <th>TPIR@FPIR=0.2</th>
-      <th>TPIR@FPIR=0.1</th>
-      <th>AUC</th>
-    </tr>
-  </thead>
-  <tbody align="center">
-    <tr>
-    <td><strong>CentreFace<strong></td>
-    <td>2016</td>
-    <td>0.245</td>
-    <td>0.196</td>
-    <td>0.132</td>
-    <td>0.337</td>                
-    </tr>
-  <tr>
-    <td><strong>SphereFace<strong></td>
-    <td>2017</td>
-    <td>0.158</td>
-    <td>0.118</td>
-    <td>0.068</td>
-    <td>0.215</td>                
-  </tr>
-  <tr>
-    <td><strong>FaceNet<strong></td>
-    <td>2015</td>
-    <td>0.120</td>
-    <td>0.075</td>
-    <td>0.039</td>
-    <td>0.186</td>                
-  </tr>
-  <tr>
-    <td><strong>DeepID2<strong></td>
-    <td>2014</td>   
-    <td>0.120</td>
-    <td>0.075</td>
-    <td>0.028</td>
-    <td>0.187</td>                
-  </tr>
-  <tr>
-    <td><strong>VggFace<strong></td>
-    <td>2015</td>    
-    <td>0.065</td>
-    <td>0.048</td>
-    <td>0.025</td>
-    <td>0.096</td>                
-  </tr>
-  </tbody>
-  </table>
-  
-  <br>
-  <br>
-  <br>
-<div align='center'>
-<h3> Indentification Curves </h3>
-</div>
-  <center><img style="width: 38%;" src="./images/all_fr_curves.png" alt="QMUL SurvFace"></center>
-  
 
-  
-  <br>
-  <br>
-  
-  </div>
 
-</div>
-<div class="tab-pane" id="2">
-<br>
-<h3> Verification </h3>
-
-<table align="center" width="100%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Algorithm</th>
-      <th>Year</th>
-      <th>TAR@FAR=0.3</th>
-      <th>TAR@FAR=0.1</th>
-      <th>TAR@FAR=0.01</th>
-      <th>TAR@FAR=0.001</th>
-      <th>AUC</th>
-    </tr>
-  </thead>
-  <tbody align="center">
-    <tr>
-    <td><strong>CentreFace<strong></td>
-    <td>2016</td>      
-    <td>0.954</td>
-    <td>0.858</td>
-    <td>0.624</td>
-    <td>0.407</td>
-    <td>0.949</td>                
-    </tr>
-  <tr>
-    <td><strong>FaceNet<strong></td>
-    <td>2015</td>     
-    <td>0.945</td>
-    <td>0.808</td>
-    <td>0.482</td>
-    <td>0.208</td>  
-    <td>0.937</td>                
-  </tr>
-  <tr>
-    <td><strong>DeepID2<strong></td>
-    <td>2014</td>        
-    <td>0.804</td>
-    <td>0.634</td>
-    <td>0.366</td>
-    <td>0.229</td> 
-    <td>0.846</td>                
-  </tr>
-  <tr>
-    <td><strong>SphereFace<strong></td>
-    <td>2017</td>     
-    <td>0.789</td>
-    <td>0.648</td>
-    <td>0.390</td>
-    <td>0.225</td>
-    <td>0.835</td>                
-  </tr> 
-  <tr>
-    <td><strong>VggFace<strong></td>
-    <td>2015</td>         
-    <td>0.647</td>
-    <td>0.424</td>
-    <td>0.150</td>
-    <td>0.044</td> 
-    <td>0.742</td>                
-  </tr>
-  </tbody>
-  </table>
-  
-  
-  
-<br>
-<br>
-
-<table align="center" width="50%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Algorithm</th>
-      <th>Year</th>
-      <th>Mean Accuracy</th>
-    </tr>
-  </thead>
-  <tbody align="center">
-    <tr>
-    <td><strong>CentreFace<strong></td>
-    <td>2016</td>      
-    <td>87.90</td>               
-    </tr>
-  <tr>
-    <td><strong>FaceNet<strong></td>
-    <td>2015</td>     
-    <td>85.67</td>                
-  </tr>
-   <tr>
-    <td><strong>SphereFace<strong></td>
-    <td>2017</td>     
-    <td>77.46</td>                
-  </tr> 
-  <tr>
-    <td><strong>DeepID2<strong></td>
-    <td>2014</td>        
-    <td>76.90</td>              
-  </tr>
- 
-  <tr>
-    <td><strong>VggFace<strong></td>
-    <td>2015</td>         
-    <td>67.59</td>               
-  </tr>
-  </tbody>
-  </table>
-  
-  <br>
-  <br>
-  </div>
 
   
-  
-  <br>
-  <br>
-  <br>
-  </div>
-  <div class="tab-pane" id="3">
-  <ul>
-  <h3> Method Details </h3>
-  </ul>
-  <table align="center" width="100%" style="margin: 0px auto;" class="justify" cellpadding="0" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Method</th>
-      <th>Details</th>
-    </tr>
-  </thead>
-  <tbody align="center">
-    <tr>
-    <td><strong>CentreFace<strong></td>
-    <td>Wen Y et al. <a href="https://pdfs.semanticscholar.org/1c3d/3058f685fb02e40fb62382690715fc597a7f.pdf">A discriminative feature learning approach for deep face recognition ECCV 2016 </td>                
-    </tr>
-  <tr>
-    <td><strong>SphereFace<strong></td>
-    <td>Liu W et al. <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf">Sphereface: Deep hypersphere embedding for face recognition CVPR 2017.</td>                
-  </tr>
-  <tr>
-    <td><strong>FaceNet<strong></td>
-    <td>Schroff F et al. <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf">Facenet: A unified embedding for face recognition and clustering CVPR 2015.</td>
-  </tr>
-  <tr>
-    <td><strong>DeepID2<strong></td>
-    <td>Sun Y et al. <a href="http://papers.nips.cc/paper/5416-deep-learning-face-representation-by-joint-identification-verification.pdf">Deep learning face representation by joint identification-verification NIPS 2014.</td>                  
-  </tr>
-  <tr>
-    <td><strong>VggFace<strong></td>
-    <td>Parkhi O M et al. <a href="http://cis.csuohio.edu/~sschung/CIS660/DeepFaceRecognition_parkhi15.pdf">Deep Face Recognition BMVC 2015.</td>                   
-  </tr>
-  </tbody>
-  </table>
-  
-  <br>
-  <br>
-  <br>
-  </div>
-</div>
 
 </div>
-</div>
-
-<script src="./QMUL-SurvFace_files/jquery.min.js" type="text/javascript"></script>
-<script src="./QMUL-SurvFace_files/bootstrap.min.js" type="text/javascript"></script>
-			<script>
-				$('#topNavbar').load($('.navbar-collapse').attr("data-url"));
-				$('#photoGrid').load('/indexPhotos.html');
-				$('#footer').load('/footer.html');
-			</script>
-			
+</div>			
 </body>
 </html>
