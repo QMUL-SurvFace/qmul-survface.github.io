@@ -79,7 +79,7 @@ th,td
   border-right: 30px solid transparent;
   border-bottom: 30px solid #2f4bd8; /* #3D3D3D; */
   border-bottom-color: #2f4bd8; /* #777\9; */
-  opacity: .8;
+  opacity: .5;
   filter: alpha(opacity=30);    
 }
 
