@@ -110,7 +110,7 @@ th,td
 
 
 div.tab-frame input{ display:none;}
-div.tab-frame label{ display:block; float:left; cursor:pointer; padding:0px 10px; }
+div.tab-frame label{ display:block; float:left; cursor:pointer; padding:10px 10px; }
 div.tab-frame input:checked + label{ background:#ffca99; color:black; cursor:default}
 div.tab-frame div.tab{display:none; padding:0px 10px; clear:left}
 
