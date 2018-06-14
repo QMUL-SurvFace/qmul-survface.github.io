@@ -161,10 +161,12 @@ body{margin:20px auto;font-family:Arial;}
 
 .pull-left {
   float: left;
+  display: inline-block;  
 }
 
 .pull-right {
   float: right;
+  display: inline-block;  
 }
 
 
