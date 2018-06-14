@@ -151,6 +151,7 @@ body{margin:20px auto;font-family:Arial;}
 
 
 
+/* ------------------ Left Right float ------------------ */
 .leftbox {
     float: left;
     width: 30%;
@@ -166,6 +167,8 @@ body{margin:20px auto;font-family:Arial;}
     clear: both;
     display: table;
 }
+/* ------------------ Left Right float ------------------ */
+
 
 
 hr.smooth
