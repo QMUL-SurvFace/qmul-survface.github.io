@@ -127,6 +127,12 @@ body{margin:20px auto;font-family:Arial;}
   border-bottom: 1px solid #eeeeee;
 }
 
+.clustrmaps-map-container {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 
 /* Footer
 -------------------------------------------------- */
