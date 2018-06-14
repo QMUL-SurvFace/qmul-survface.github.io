@@ -121,6 +121,12 @@ div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3){ display:block;
 body{margin:20px auto;font-family:Arial;}
 
 
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
 
 /* Footer
 -------------------------------------------------- */
