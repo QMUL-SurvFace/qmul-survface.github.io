@@ -151,6 +151,22 @@ body{margin:20px auto;font-family:Arial;}
 
 
 
+.leftbox {
+    float: left;
+    width: 30%;
+}
+
+.rightbox {
+    float: right;
+    width: 30%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 hr.smooth
 {
