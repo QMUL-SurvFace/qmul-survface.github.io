@@ -146,6 +146,18 @@ body{margin:20px auto;font-family:Arial;}
   padding-left: 0;
 }
 
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.span2 {
+    width: 25%;
+}
+
 
 
 hr.smooth
