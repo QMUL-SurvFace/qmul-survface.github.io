@@ -134,6 +134,7 @@ body{margin:20px auto;font-family:Arial;}
 .footer p {
   margin-bottom: 0;
   color: #777;
+  width: 20%;
 }
 .footer-links {
   margin: 10px 0;
@@ -154,9 +155,6 @@ body{margin:20px auto;font-family:Arial;}
   float: right;
 }
 
-.span2 {
-    width: 25%;
-}
 
 
 
