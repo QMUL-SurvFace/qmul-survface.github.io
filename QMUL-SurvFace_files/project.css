@@ -110,8 +110,8 @@ th,td
 
 
 div.tab-frame input{ display:none;}
-div.tab-frame label{ display:block; float:left;padding:5px 10px; cursor:pointer}
-div.tab-frame input:checked + label{ background:#ccc; color:black; cursor:default}
+div.tab-frame label{ display:block; float:left;padding:10px 5px; cursor:pointer}
+div.tab-frame input:checked + label{ background:#ff9999; color:black; cursor:default}
 div.tab-frame div.tab{ display:none; padding:5px 10px;clear:left}
 
 div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
